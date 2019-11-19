@@ -14,7 +14,7 @@ TARGET=main
 build: main.hex size
 
 program: build
-	$(AVRD) -p $(MMCU) -c stk600 -P usb -v -v -U flash:w:$(TARGET).hex
+	$(AVRD) -p $(MMCU) -c avrispmkII -P usb -v -v -U flash:w:$(TARGET).hex
 
 firmware: $(TARGET).hex
 

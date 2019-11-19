@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include "Wire.h"
+#include <math.h>
 
 /* The default I2C address of this chip */
 #define QMC5883L_ADDR 0x0D
